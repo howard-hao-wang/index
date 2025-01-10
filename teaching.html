@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Teaching</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -32,17 +32,59 @@
     section {
       padding: 20px;
     }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    p, ul {
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    blockquote {
+      background-color: #f9f9f9;
+      border-left: 4px solid #ccc;
+      margin: 20px 0;
+      padding: 10px 20px;
+      font-style: italic;
+    }
     footer {
       text-align: center;
       padding: 10px;
       background-color: #f4f4f4;
+      margin-top: 20px;
+    }
+    .resources, .evaluation, .requirements {
+      margin-top: 20px;
+    }
+    .resources ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .resources li::before {
+      content: "• ";
+      color: #0066cc;
+    }
+    .requirements ol,
+    .evaluation ol {
+      padding-left: 20px;
+    }
+    .requirements li,
+    .evaluation li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-  <h1>Teaching</h1>
-  <p>Reflect our teacher’s kindness in our teaching</p>
+    <h1>Teaching</h1>
+    <p>Reflect our teacher’s kindness in our teaching</p>
   </header>
   <nav>
     <a href="index.html">Home</a>
@@ -53,10 +95,12 @@
     <a href="resources.html">Resources</a>
     <a href="life.html">Life</a>
   </nav>
+  
   <section>
-
-    <h2>Teaching Experience and the Feedback</h2>
-    <p>I hold a strong commitment to teaching excellence. At CUHK, I served as a teaching assistant for three courses. I was praised for simplifying complex quantitative methods and fostering student engagement. For instance, a student commented:</p>
+    <h2>Teaching Experience and Feedback</h2>
+    <p>
+      I hold a strong commitment to teaching excellence. At CUHK, I served as a teaching assistant for three courses. I was praised for simplifying complex quantitative methods and fostering student engagement. For instance, a student commented:
+    </p>
     <blockquote>
       “thank you, Howard, for teaching the quantitative methods and providing clear guidelines. He has been a very supportive tutor and one of the best tutors I have ever encountered.”
     </blockquote>
@@ -66,15 +110,15 @@
       <li><strong>Students must work hard, which in turn pushes teachers to share more knowledge.</strong> (Prof. Lianjiang LI's teaching motto)</li>
       <li><strong>Always stay open.</strong> (Prof. Xi CHEN's teaching motto)</li>
       <li><strong>Always keep learning new and challenging things.</strong> (Prof. Hai LIANG's teaching motto)</li>
-    
       <li><strong>Methods are weapons.</strong></li>
-      
       <li><strong>The essence of teaching is to pass on responsibility.</strong> This responsibility comes from the inspiration received from my teachers when I was a student and the duties entrusted to teachers by society.</li>
       <li><strong>Only by understanding something yourself can you truly teach it to your students.</strong></li>
     </ul>
 
     <h2>Computational Social Science Course</h2>
-    <p>I am interested in teaching a computational social science course. I have preliminarily designed a course titled <strong>“Computational Social Science: Introduction and Application.”</strong> It covers:</p>
+    <p>
+      I am interested in teaching a computational social science course. I have preliminarily designed a course titled <strong>“Computational Social Science: Introduction and Application.”</strong> It covers:
+    </p>
     <ul>
       <li>R/Python basics</li>
       <li>Web scraping</li>
@@ -82,10 +126,52 @@
       <li>Social network analysis</li>
       <li>Image-as-data</li>
       <li>Audio/video analysis</li>
-      <li>How Computational Social Science contributes to traditional methods (e.g., survey approach) </li>
+      <li>How Computational Social Science contributes to traditional methods (e.g., survey approach)</li>
       <li>And other related topics</li>
     </ul>
+
+    <div class="resources">
+      <h2>Textbooks and Resources</h2>
+      <ul>
+        <li><a href="http://www.bitbybitbook.com" target="_blank">Matthew J. Salganik. 2017. Bit by Bit: Social Research in the Digital Age</a></li>
+        <li><a href="https://r4ds.had.co.nz/" target="_blank">R for Data Science</a></li>
+        <li><a href="https://ggplot2-book.org/" target="_blank">ggplot2: Elegant Graphics for Data Analysis (3e)</a></li>
+        <li><a href="https://adv-r.hadley.nz/index.html" target="_blank">Advanced R</a></li>
+        <li><a href="https://www.nature.com/articles/s41586-021-03666-1" target="_blank">Wagner et al. 2021. Measuring Algorithmically Infused Societies</a></li>
+        <li><a href="https://drhailiang.com/teaching/COMM6320" target="_blank">Professor Hai Liang’s Website</a></li>
+        <li><a href="https://science.org/doi/full/10.1126/science.1167742" target="_blank">Lazer et al. 2009. Computational Social Science</a></li>
+      </ul>
+    </div>
+
+    <div class="evaluation">
+      <h2>Course Evaluation (100 Points in Total)</h2>
+      <ol>
+        <li>R or Python Coding – 10 Points</li>
+        <li>Web Scraping – 10 Points</li>
+        <li>Text-as-Data – 10 Points</li>
+        <li>Image, Audio, or Video as Data – 10 Points</li>
+        <li>Social Network Analysis – 10 Points</li>
+        <li>Statistical Regression – 10 Points</li>
+        <li>Final Course Paper – 40 Points</li>
+      </ol>
+    </div>
+
+    <div class="requirements">
+      <h2>Requirements for Final Course Paper</h2>
+      <ol>
+        <li><strong>Clear Research Question:</strong> Define a focused and compelling research question that addresses a significant issue in computational social science.</li>
+        <li><strong>Literature Review:</strong> Provide a thorough review of existing studies, demonstrating an understanding of the current state of knowledge in the field.</li>
+        <li><strong>Research Gap and Theoretical Argument:</strong> Identify a clear gap in the literature and present a strong theoretical argument.</li>
+        <li><strong>Data:</strong> Describe the data source(s) used, including how the data was collected, and ensure the dataset is appropriate for answering the research question.</li>
+        <li><strong>Variable Measurement:</strong> Clearly define and justify the measurement of key variables, including dependent, independent, and control variables.</li>
+        <li><strong>Model Specification:</strong> Specify the analytical model(s) used, ensuring they are appropriate to answer the research question and suited to the nature of the data.</li>
+        <li><strong>Main Results:</strong> Present and interpret the main findings in a clear and organized manner, supported by appropriate visualizations (e.g., tables, graphs).</li>
+        <li><strong>Robustness Checks:</strong> Conduct and report robustness checks to ensure the validity of results (e.g., measurement bias, sample selection bias, mechanisms, etc.).</li>
+        <li><strong>Theoretical Contribution:</strong> Clearly articulate the broader theoretical implications of the findings, emphasizing their relevance to a wider audience.</li>
+      </ol>
+    </div>
   </section>
+  
   <footer>
     <p>Copyright © Howard H. WANG, 2025</p>
   </footer>
