@@ -30,7 +30,20 @@
       background-color: #575757;
     }
     section {
+      display: flex;
       padding: 20px;
+    }
+    .about-image {
+      flex: 1;
+      max-width: 300px;
+      margin-right: 20px;
+    }
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .about-text {
+      flex: 2;
     }
     footer {
       text-align: center;
@@ -52,22 +65,27 @@
     <a href="contact.html">Contact</a>
   </nav>
   <section>
-    <h2>About Me</h2>
-    <p>
-      I am currently a Postdoctoral Fellow in the Department of Public and International Affairs at City University of Hong Kong. 
-      I earned my Ph.D. in Political Science from The Chinese University of Hong Kong (CUHK) in July 2023. Before entering academia, 
-      I was deeply engaged in grassroots governance for 5 years. 
-    </p>
-    <p>
-      In 2012, I began working as a college village official in Wuhan, where I narrowly avoided injury during clashes with protesters 
-      over the demolition of an industrial park. This incident prompted me to question how developing countries integrate sources of 
-      instability into formal political institutions. Later, as a civil servant in Guangzhou (2013–2017), I observed how well-institutionalized 
-      online petition channels provided partial solutions.
-    </p>
-    <p>
-      These experiences led me to ask a big question: How can a revolutionary regime move from a campaign-style governance to a more 
-      institutionalized form of governance?
-    </p>
+    <div class="about-image">
+      <img src="your-image-path.jpg" alt="Howard H. WANG Graduation Photo">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am currently a Postdoctoral Fellow in the Department of Public and International Affairs at City University of Hong Kong. 
+        I earned my Ph.D. in Political Science from The Chinese University of Hong Kong (CUHK) in July 2023. Before entering academia, 
+        I was deeply engaged in grassroots governance for 5 years. 
+      </p>
+      <p>
+        In 2012, I began working as a college village official in Wuhan, where I narrowly avoided injury during clashes with protesters 
+        over the demolition of an industrial park. This incident prompted me to question how developing countries integrate sources of 
+        instability into formal political institutions. Later, as a civil servant in Guangzhou (2013–2017), I observed how well-institutionalized 
+        online petition channels provided partial solutions.
+      </p>
+      <p>
+        These experiences led me to ask a big question: How can a revolutionary regime move from a campaign-style governance to a more 
+        institutionalized form of governance?
+      </p>
+    </div>
   </section>
   <footer>
     <p>Copyright © Howard H. WANG, 2025</p>
