@@ -50,6 +50,11 @@
       padding: 10px;
       background-color: #f4f4f4;
     }
+    .visit-count {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
@@ -66,6 +71,7 @@
     <a href="resources.html">Resources</a>
     <a href="lifestyle.html">Lifestyle</a>
   </nav>
+  <div class="visit-count" id="visit-count">Visit times: 0</div>
   <section>
     <div class="about-image">
       <img src="hw_graduation_photo.png" alt="Howard H. WANG">
@@ -89,25 +95,25 @@
         These experiences led me to ask a big question: <em>How can a revolutionary regime move from a campaign-style governance to a more 
         institutionalized form of governance?</em>
       </p>
-
-
       <p>
-      My primary research focus is on political institutions and public policies in China. 
+        My primary research focus is on political institutions and public policies in China. 
       </p>
-      
       <p>
-      My methodological interests include computational social science (including web scraping, text mining, image analysis, and social network analysis), survival analysis (also known as event history analysis), panel data analysis, and survey data analysis.
+        My methodological interests include computational social science (including web scraping, text mining, image analysis, and social network analysis), survival analysis (also known as event history analysis), panel data analysis, and survey data analysis.
       </p>
-
-
-You can reach me at hwang698[at]cityu.edu.hk.
-
-
-      
+      <p>You can reach me at hwang698[at]cityu.edu.hk.</p>
     </div>
   </section>
   <footer>
     <p>Copyright © Howard H. WANG, 2025</p>
   </footer>
+
+  <script>
+    // Initialize visit count
+    let visitCount = localStorage.getItem('visitCount') ? parseInt(localStorage.getItem('visitCount')) : 0;
+    visitCount++;
+    localStorage.setItem('visitCount', visitCount);
+    document.getElementById('visit-count').textContent = 'Visit times: ' + visitCount;
+  </script>
 </body>
 </html>
