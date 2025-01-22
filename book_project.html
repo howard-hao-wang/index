@@ -59,6 +59,14 @@
     footer p {
       margin: 0;
     }
+
+    // visit count1
+    .visit-count {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 1.2em;
+    }
+    
   </style>
 </head>
 <body>
@@ -75,6 +83,10 @@
     <a href="resources.html">Resources</a>
     <a href="lifestyle.html">Lifestyle</a>
   </nav>
+  
+  // visit count2
+  <div class="visit-count" id="visit-count">Visit times: 0</div>
+  
   <section>
     <h2>Pressure Transfer and Institutionalization: How Social Unrest Prompts Online Petition Channels in China</h2>
     
@@ -123,5 +135,15 @@
   <footer>
     <p>Copyright © Howard H. WANG, 2025</p>
   </footer>
+
+
+  <script>
+    // Initialize visit count3
+    let visitCount = localStorage.getItem('visitCount') ? parseInt(localStorage.getItem('visitCount')) : 0;
+    visitCount++;
+    localStorage.setItem('visitCount', visitCount);
+    document.getElementById('visit-count').textContent = 'Visit times: ' + visitCount;
+  </script>
+  
 </body>
 </html>
