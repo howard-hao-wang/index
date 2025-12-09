@@ -140,7 +140,59 @@
 
 
     <h2>Reading List on Chinese Politics and Public Policies</h2>
-        <ol>
+
+           <!-- Collapsible "Other Great Journals" Section -->
+            <style>
+              .toggle-section {
+                margin: 1.5rem 0;
+                font-family: "Helvetica Neue", Arial, sans-serif;
+              }
+            
+              .toggle-header {
+                cursor: pointer;
+                color: #003366;
+                border-bottom: 2px solid #ccc;
+                display: inline-block;
+                padding-bottom: 0.25rem;
+                transition: color 0.3s ease;
+              }
+            
+              .toggle-header:hover {
+                color: #0055aa;
+              }
+            
+              .toggle-list {
+                list-style-type: none;
+                padding-left: 1.2rem;
+                margin-top: 0.8rem;
+                display: none;  /* hidden by default */
+              }
+            
+              .toggle-list li {
+                margin: 0.4rem 0;
+                line-height: 1.5;
+              }
+            
+              .toggle-section.open .toggle-list {
+                display: block;
+              }
+            
+              /* Small caret symbol */
+              .caret::after {
+                content: "▶";
+                font-size: 0.8rem;
+                margin-left: 0.5rem;
+                transition: transform 0.3s ease;
+              }
+              .toggle-section.open .caret::after {
+                transform: rotate(90deg);
+              }
+            </style>
+            
+            <div class="toggle-section" id="journals-section">
+              <h3 class="toggle-header caret" onclick="toggleJournals()">Other Great Journals</h3>
+              <ul class="toggle-list">
+              <ol>
             <li>O’Brien, Kevin J., and Lianjiang Li. 2006. <em>Rightful Resistance in Rural China</em>. New York: Cambridge University Press.</li>
             <li>Landry, Pierre F. 2008. <em>Decentralized Authoritarianism in China: The Communist Party’s Control of Local Elites in the Post-Mao Era</em>. New York: Cambridge University Press.</li>
             <li>Cai, Yongshun. 2010. <em>Collective Resistance in China: Why Popular Protests Succeed or Fail</em>. Studies of the Walter H. Shorenstein Asia-Pacific Research Center. Stanford, Calif: Stanford University Press.</li>
@@ -181,6 +233,17 @@
             <li>Mattingly, Daniel, Trevor Incerti, Changwook Ju, Colin Moreshead, Seiki Tanaka, and Hikaru Yamagishi. 2024. “Chinese State Media Persuades a Global Audience That the ‘China Model’ Is Superior: Evidence from a 19‐Country Experiment.” <em>American Journal of Political Science</em>, July. <a href="https://doi.org/10.1111/ajps.12887" target="_blank">https://doi.org/10.1111/ajps.12887</a>.</li>
             <li>Cheng, E. W., & Yuen, S. (2025). The Making of Leaderful Mobilization: Power and Contention in Hong Kong. Cambridge University Press. https://doi.org/10.1017/9781009445832</li>
         </ol>
+              </ul>
+            </div>
+            
+            <script>
+              function toggleJournals() {
+                const section = document.getElementById("journals-section");
+                section.classList.toggle("open");
+              }
+            </script>
+          
+        
 
 
 
