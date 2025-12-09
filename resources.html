@@ -111,37 +111,51 @@
   <h2>Reading List on Government Responsiveness</h2>
   <!-- Collapsible "Other Great Journals" Section -->
        <style>
-      .toggle-header {
-        cursor: pointer;
-        color: #003366;
-        border-bottom: 2px solid #ccc;
-        display: inline-block;
-        padding-bottom: 0.25rem;
-        transition: color 0.3s ease;
-    
-        /* 👇 added styles */
-        text-indent: 2em;          /* moves text right by ~two-character width (like two words) */
-        font-size: 0.9rem;         /* makes the heading smaller */
-        font-weight: normal;       /* optional: makes it lighter */
-      }
-    
-      .toggle-header:hover {
-        color: #0055aa;
-      }
-    
-      .caret::after {
-        content: "▼";
-        font-size: 0.8rem;
-        margin-left: 0.5rem;
-        display: inline-block;
-        transform: rotate(-90deg);  /* points sideways initially */
-        transition: transform 0.3s ease;
-      }
-    
-      .toggle-section.open .caret::after {
-        transform: rotate(0deg);    /* rotates downward when expanded */
-      }
-    </style>         
+              .toggle-section {
+                margin: 1.5rem 0;
+                font-family: "Helvetica Neue", Arial, sans-serif;
+              }
+            
+              .toggle-header {
+                cursor: pointer;
+                color: #003366;
+                border-bottom: 2px solid #ccc;
+                display: inline-block;
+                padding-bottom: 0.25rem;
+                transition: color 0.3s ease;
+              }
+            
+              .toggle-header:hover {
+                color: #0055aa;
+              }
+            
+              .toggle-list {
+                list-style-type: none;
+                padding-left: 1.2rem;
+                margin-top: 0.8rem;
+                display: none;  /* hidden by default */
+              }
+            
+              .toggle-list li {
+                margin: 0.4rem 0;
+                line-height: 1.5;
+              }
+            
+              .toggle-section.open .toggle-list {
+                display: block;
+              }
+            
+              /* Small caret symbol */
+              .caret::after {
+                content: "▶";
+                font-size: 0.8rem;
+                margin-left: 0.5rem;
+                transition: transform 0.3s ease;
+              }
+              .toggle-section.open .caret::after {
+                transform: rotate(90deg);
+              }
+            </style>       
             
             <div class="toggle-section" id="journals-section">
               <h3 class="toggle-header caret" onclick="toggleJournals()">See the list</h3>
@@ -189,37 +203,53 @@
 
       <!-- Collapsible "Other Great Journals" Section -->
        <style>
-      .toggle-header {
-        cursor: pointer;
-        color: #003366;
-        border-bottom: 2px solid #ccc;
-        display: inline-block;
-        padding-bottom: 0.25rem;
-        transition: color 0.3s ease;
+              .toggle-section {
+                margin: 1.5rem 0;
+                font-family: "Helvetica Neue", Arial, sans-serif;
+              }
+            
+              .toggle-header {
+                cursor: pointer;
+                color: #003366;
+                border-bottom: 2px solid #ccc;
+                display: inline-block;
+                padding-bottom: 0.25rem;
+                transition: color 0.3s ease;
+              }
+            
+              .toggle-header:hover {
+                color: #0055aa;
+              }
+            
+              .toggle-list {
+                list-style-type: none;
+                padding-left: 1.2rem;
+                margin-top: 0.8rem;
+                display: none;  /* hidden by default */
+              }
+            
+              .toggle-list li {
+                margin: 0.4rem 0;
+                line-height: 1.5;
+              }
+            
+              .toggle-section.open .toggle-list {
+                display: block;
+              }
+            
+              /* Small caret symbol */
+              .caret::after {
+                content: "▶";
+                font-size: 0.8rem;
+                margin-left: 0.5rem;
+                transition: transform 0.3s ease;
+              }
+              .toggle-section.open .caret::after {
+                transform: rotate(90deg);
+              }
+            </style>
+
     
-        /* 👇 added styles */
-        text-indent: 2em;          /* moves text right by ~two-character width (like two words) */
-        font-size: 0.9rem;         /* makes the heading smaller */
-        font-weight: normal;       /* optional: makes it lighter */
-      }
-    
-      .toggle-header:hover {
-        color: #0055aa;
-      }
-    
-      .caret::after {
-        content: "▼";
-        font-size: 0.8rem;
-        margin-left: 0.5rem;
-        display: inline-block;
-        transform: rotate(-90deg);  /* points sideways initially */
-        transition: transform 0.3s ease;
-      }
-    
-      .toggle-section.open .caret::after {
-        transform: rotate(0deg);    /* rotates downward when expanded */
-      }
-    </style>      
             <div class="toggle-section" id="journals-section">
               <h3 class="toggle-header caret" onclick="toggleJournals()">See the list</h3>
               <ul class="toggle-list">
@@ -290,37 +320,51 @@
 
       <!-- Collapsible "Other Great Journals" Section -->
          <style>
-      .toggle-header {
-        cursor: pointer;
-        color: #003366;
-        border-bottom: 2px solid #ccc;
-        display: inline-block;
-        padding-bottom: 0.25rem;
-        transition: color 0.3s ease;
-    
-        /* 👇 added styles */
-        text-indent: 2em;          /* moves text right by ~two-character width (like two words) */
-        font-size: 0.9rem;         /* makes the heading smaller */
-        font-weight: normal;       /* optional: makes it lighter */
-      }
-    
-      .toggle-header:hover {
-        color: #0055aa;
-      }
-    
-      .caret::after {
-        content: "▼";
-        font-size: 0.8rem;
-        margin-left: 0.5rem;
-        display: inline-block;
-        transform: rotate(-90deg);  /* points sideways initially */
-        transition: transform 0.3s ease;
-      }
-    
-      .toggle-section.open .caret::after {
-        transform: rotate(0deg);    /* rotates downward when expanded */
-      }
-    </style>      
+              .toggle-section {
+                margin: 1.5rem 0;
+                font-family: "Helvetica Neue", Arial, sans-serif;
+              }
+            
+              .toggle-header {
+                cursor: pointer;
+                color: #003366;
+                border-bottom: 2px solid #ccc;
+                display: inline-block;
+                padding-bottom: 0.25rem;
+                transition: color 0.3s ease;
+              }
+            
+              .toggle-header:hover {
+                color: #0055aa;
+              }
+            
+              .toggle-list {
+                list-style-type: none;
+                padding-left: 1.2rem;
+                margin-top: 0.8rem;
+                display: none;  /* hidden by default */
+              }
+            
+              .toggle-list li {
+                margin: 0.4rem 0;
+                line-height: 1.5;
+              }
+            
+              .toggle-section.open .toggle-list {
+                display: block;
+              }
+            
+              /* Small caret symbol */
+              .caret::after {
+                content: "▶";
+                font-size: 0.8rem;
+                margin-left: 0.5rem;
+                transition: transform 0.3s ease;
+              }
+              .toggle-section.open .caret::after {
+                transform: rotate(90deg);
+              }
+            </style>     
             
             <div class="toggle-section" id="journals-section">
               <h3 class="toggle-header caret" onclick="toggleJournals()">See the list</h3>
