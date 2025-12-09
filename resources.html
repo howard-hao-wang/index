@@ -2,37 +2,67 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resources</title>
-  
   <style>
-  body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    max-width: 900px;
-    background-color: #fafafa;
-    color: #222;
-  }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f4f4f4;
+      margin-top: 20px;
+    }
 
-  h1, h2 {
-    color: #00264d;
-    border-bottom: 3px solid #ccc;
-    padding-bottom: 0.25rem;
-  }
 
-  a {
-    color: #004488;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-
-  /* === Collapsible section base === */
+    /* === Collapsible section base === */
   .toggle-section {
     margin: 2rem 0;
   }
@@ -96,11 +126,12 @@
     body { font-size: 0.95rem; }
     .toggle-header { font-size: 0.9rem; }
   }
-    
-</style>
 
-
+  
+  </style>
 </head>
+
+
 <body>
   <header>
     <h1>Resources</h1>
