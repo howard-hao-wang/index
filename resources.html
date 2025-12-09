@@ -198,63 +198,76 @@
 
   <!-- @@@Section 3 -->
 
+      <h2>Reading List on Chinese Politics and Public Policies</h2>
 
-    <h2>Reading List on Chinese Politics and Public Policies</h2>
+<!-- Collapsible "Responsiveness" Reading List -->
+<style>
+  .toggle-section {
+    margin: 1.5rem 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
 
-      <!-- Collapsible "Other Great Journals" Section -->
-       <style>
-              .toggle-section {
-                margin: 1.5rem 0;
-                font-family: "Helvetica Neue", Arial, sans-serif;
-              }
-            
-              .toggle-header {
-                cursor: pointer;
-                color: #003366;
-                border-bottom: 2px solid #ccc;
-                display: inline-block;
-                padding-bottom: 0.25rem;
-                transition: color 0.3s ease;
-              }
-            
-              .toggle-header:hover {
-                color: #0055aa;
-              }
-            
-              .toggle-list {
-                list-style-type: none;
-                padding-left: 1.2rem;
-                margin-top: 0.8rem;
-                display: none;  /* hidden by default */
-              }
-            
-              .toggle-list li {
-                margin: 0.4rem 0;
-                line-height: 1.5;
-              }
-            
-              .toggle-section.open .toggle-list {
-                display: block;
-              }
-            
-              /* Small caret symbol */
-              .caret::after {
-                content: "▶";
-                font-size: 0.8rem;
-                margin-left: 0.5rem;
-                transition: transform 0.3s ease;
-              }
-              .toggle-section.open .caret::after {
-                transform: rotate(90deg);
-              }
-            </style>
+  /* Collapsible header (clickable label) */
+  .toggle-header {
+    cursor: pointer;
+    color: #003366;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    font-size: 0.95rem;     /* smaller text */
+    text-indent: 2em;       /* visual indent by 2 characters/words */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
 
-    
-            <div class="toggle-section" id="journals-section">
-              <h3 class="toggle-header caret" onclick="toggleJournals()">See the list</h3>
-              <ul class="toggle-list">
-                <ol>
-                  <li>O’Brien, Kevin J., and Lianjiang Li. 2006. <em>Rightful Resistance in Rural China</em>. New York: Cambridge University Press.</li>
+  .toggle-header:hover {
+    color: #0055aa;
+  }
+
+  /* Collapsible list container */
+  .toggle-list {
+    margin-top: 0.8rem;
+    padding-left: 2rem;
+    display: none; /* hidden by default */
+  }
+
+  .toggle-list ol {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+
+  .toggle-list li {
+    margin: 0.6rem 0;
+    line-height: 1.55;
+  }
+
+  /* Opened state */
+  .toggle-section.open .toggle-list {
+    display: block;
+  }
+
+  /* Caret styling */
+  .caret::after {
+    content: "▼";
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+    transform: rotate(-90deg); /* points right initially */
+    transition: transform 0.3s ease;
+  }
+  .toggle-section.open .caret::after {
+    transform: rotate(0deg); /* points down when expanded */
+  }
+</style>
+
+<div class="toggle-section" id="journals-section">
+  <h3 class="toggle-header caret" onclick="toggleJournals()">
+    See the “Responsiveness” list
+  </h3>
+
+  <div class="toggle-list">
+              <ol>
+               <li>O’Brien, Kevin J., and Lianjiang Li. 2006. <em>Rightful Resistance in Rural China</em>. New York: Cambridge University Press.</li>
                   <li>Landry, Pierre F. 2008. <em>Decentralized Authoritarianism in China: The Communist Party’s Control of Local Elites in the Post-Mao Era</em>. New York: Cambridge University Press.</li>
                   <li>Cai, Yongshun. 2010. <em>Collective Resistance in China: Why Popular Protests Succeed or Fail</em>. Studies of the Walter H. Shorenstein Asia-Pacific Research Center. Stanford, Calif: Stanford University Press.</li>
                   <li><a href="https://www.cambridge.org/core/books/social-protest-and-contentious-authoritarianism-in-china/996F53F6D286C3F0E367C96E9CD5D8A6" target="_blank">Chen, Xi. 2012. <em>Social Protest and Contentious Authoritarianism in China</em>.</a> Cambridge: Cambridge University Press.</li>
@@ -293,18 +306,16 @@
                   <li>Mattingly, Daniel C. 2024. “How the Party Commands the Gun: The Foreign-Domestic Threat Dilemma in China.” <em>American Journal of Political Science</em> 68 (1): 227–42.</li>
                   <li>Mattingly, Daniel, Trevor Incerti, Changwook Ju, Colin Moreshead, Seiki Tanaka, and Hikaru Yamagishi. 2024. “Chinese State Media Persuades a Global Audience That the ‘China Model’ Is Superior: Evidence from a 19‐Country Experiment.” <em>American Journal of Political Science</em>, July. <a href="https://doi.org/10.1111/ajps.12887" target="_blank">https://doi.org/10.1111/ajps.12887</a>.</li>
                   <li>Cheng, E. W., & Yuen, S. (2025). The Making of Leaderful Mobilization: Power and Contention in Hong Kong. Cambridge University Press. https://doi.org/10.1017/9781009445832</li>
-               </ol>
-              </ul>
-            </div>
-            
-            <script>
-              function toggleJournals() {
-                const section = document.getElementById("journals-section");
-                section.classList.toggle("open");
-              }
-            </script>
-          
-        
+              </ol>
+  </div>
+</div>
+
+<script>
+  function toggleJournals() {
+    const section = document.getElementById("journals-section");
+    section.classList.toggle("open");
+  }
+</script>
 
 
 
