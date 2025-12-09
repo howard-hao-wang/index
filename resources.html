@@ -74,7 +74,9 @@
     <a href="lifestyle.html">Lifestyle</a>
   </nav>
 
-    <section id="v1" style="font-family:'Helvetica Neue',Arial,sans-serif; line-height:1.6; max-width:900px; margin:auto; padding:2rem;">
+
+  <!-- This Sections wave1 -->
+  <section id="wave1" style="font-family:'Helvetica Neue',Arial,sans-serif; line-height:1.6; max-width:900px; margin:auto; padding:2rem;">
 
 
 
@@ -308,29 +310,84 @@
         
         </ul>
 
-        <h3>Other Great Journals</h3>
-        <ul>
-            <li>International Organization</li>
-            <li>International Security</li>
-            <li>International Studies Quarterly</li>
-            <li><a href="https://www.sciencedirect.com/journal/cities" target="_blank">Cities</a></li>
-            <li>American Historical Review</li>
-            <li>History and Theory</li>
-            
-            <li>Government Information Quarterly (GIQ)</li>
-            <li>European Journal of International Relations</li>
-            <li>European Journal of Political Research</li>
-            <li><a href="https://www.sciencedirect.com/journal/computers-in-human-behavior" target="_blank">Computers in Human Behavior</a> (Focuses on the impact of technology on human behavior and society)</li>
-            <li><a href="https://journals.sagepub.com/home/usj" target="_blank">Urban Studies</a> (A leading journal in urban studies, governance, and social policy)</li>
-            <li><a href="https://www.tandfonline.com/toc/fcpa20/current" target="_blank">Journal of Comparative Policy Analysis (JCPA)</a> (A key journal for comparative research in public policy and administration)</li>
-            <li>Journal of Urban Affairs (Interdisciplinary urban studies) </li>
-            <li>Global Environmental Politics</li>
-            <li>Environmental Politics (Interdisciplinary journal at the intersection of environmental studies and political science) </li>
+        <!-- Collapsible "Other Great Journals" Section -->
+<style>
+  .toggle-section {
+    margin: 1.5rem 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
 
-            <li>Economic Journal (EJ) </li>
-            <li>Journal of Development Economics (JDE) </li>
-            <li>Population and Development Review (PDR) </li>
-            
+  .toggle-header {
+    cursor: pointer;
+    color: #003366;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    transition: color 0.3s ease;
+  }
+
+  .toggle-header:hover {
+    color: #0055aa;
+  }
+
+  .toggle-list {
+    list-style-type: none;
+    padding-left: 1.2rem;
+    margin-top: 0.8rem;
+    display: none;  /* hidden by default */
+  }
+
+  .toggle-list li {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+  }
+
+  .toggle-section.open .toggle-list {
+    display: block;
+  }
+
+  /* Small caret symbol */
+  .caret::after {
+    content: "▶";
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  .toggle-section.open .caret::after {
+    transform: rotate(90deg);
+  }
+</style>
+
+<div class="toggle-section" id="journals-section">
+  <h3 class="toggle-header caret" onclick="toggleJournals()">Other Great Journals</h3>
+  <ul class="toggle-list">
+    <li>International Organization</li>
+    <li>International Security</li>
+    <li>International Studies Quarterly</li>
+    <li><a href="https://www.sciencedirect.com/journal/cities" target="_blank">Cities</a></li>
+    <li>American Historical Review</li>
+    <li>History and Theory</li>
+    <li>Government Information Quarterly (GIQ)</li>
+    <li>European Journal of International Relations</li>
+    <li>European Journal of Political Research</li>
+    <li><a href="https://www.sciencedirect.com/journal/computers-in-human-behavior" target="_blank">Computers in Human Behavior</a> (Focuses on the impact of technology on human behavior and society)</li>
+    <li><a href="https://journals.sagepub.com/home/usj" target="_blank">Urban Studies</a> (A leading journal in urban studies, governance, and social policy)</li>
+    <li><a href="https://www.tandfonline.com/toc/fcpa20/current" target="_blank">Journal of Comparative Policy Analysis (JCPA)</a> (A key journal for comparative research in public policy and administration)</li>
+    <li>Journal of Urban Affairs (Interdisciplinary urban studies)</li>
+    <li>Global Environmental Politics</li>
+    <li>Environmental Politics (Interdisciplinary journal at the intersection of environmental studies and political science)</li>
+    <li>Economic Journal (EJ)</li>
+    <li>Journal of Development Economics (JDE)</li>
+    <li>Population and Development Review (PDR)</li>
+  </ul>
+</div>
+
+<script>
+  function toggleJournals() {
+    const section = document.getElementById("journals-section");
+    section.classList.toggle("open");
+  }
+</script>
           
           
         </ul>
@@ -343,7 +400,7 @@
         </p>
 
 
-
+  <!-- This Sections wave2 -->
   <section id="hk-academic-positions" style="font-family:'Helvetica Neue',Arial,sans-serif; line-height:1.6; max-width:900px; margin:auto; padding:2rem;">
   <h2 style="color:#003366; border-bottom:2px solid #ccc; padding-bottom:0.5rem;">HK Academic Positions</h2>
     
